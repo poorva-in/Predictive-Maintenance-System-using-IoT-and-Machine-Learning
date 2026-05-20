@@ -67,6 +67,6 @@ The project simulates ESP32-based sensor communication using Python.
 # Alert System
 When abnormal machine conditions are detected:
 
-SMS alerts are sent using Twilio
-Email notifications are triggered automatically
-Maintenance recommendations are provided
+- SMS alerts are sent using Twilio
+- Email notifications are triggered automatically
+- Maintenance recommendations are provided
