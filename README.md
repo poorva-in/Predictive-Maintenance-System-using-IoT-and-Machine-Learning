@@ -63,6 +63,26 @@ https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classific
 # IoT Integration
 The system sends real-time machine data to the ThingSpeak cloud platform for monitoring and visualization.
 The project simulates ESP32-based sensor communication using Python.
+## Data Exploration
+<img width="2233" height="1328" alt="data_exploration (2)" src="https://github.com/user-attachments/assets/00ee9e12-488a-4278-89bf-2a39638430ba" />
+
+## Confusion Matrix
+<img width="989" height="732" alt="confusion_matrix (1)" src="https://github.com/user-attachments/assets/e8efc737-8eab-482e-be14-35d3eabf133c" />
+
+## Decision Boundary
+<img width="2085" height="946" alt="decision_boundary (1)" src="https://github.com/user-attachments/assets/cd76ffb8-1b0e-4230-96e5-c2cec52cf13c" />
+
+## ESP 32 Simulation
+<img width="2084" height="1769" alt="esp32_simulation (1)" src="https://github.com/user-attachments/assets/93b2fe90-5e9e-4991-b033-fa6079996316" />
+
+## Things Speak graphs
+<img width="544" height="295" alt="graph1" src="https://github.com/user-attachments/assets/3a984d9a-9245-49c4-9151-1c987f23cad7" />
+<img width="551" height="281" alt="graph2" src="https://github.com/user-attachments/assets/af633b70-92f7-43c5-85ff-74012d6c8efa" />
+<img width="528" height="305" alt="graph3" src="https://github.com/user-attachments/assets/1ae85d60-842a-41af-8c21-0e19ac369b2f" />
+<img width="541" height="315" alt="graph4" src="https://github.com/user-attachments/assets/da0efd01-8b58-4611-9162-69202d0b964c" />
+<img width="545" height="296" alt="graph5" src="https://github.com/user-attachments/assets/fd9247d2-fa01-44b5-ad27-455f09472ad1" />
+<img width="557" height="295" alt="graph6" src="https://github.com/user-attachments/assets/96562ddf-450e-4e5a-8d97-8554ed766b41" />
+<img width="570" height="302" alt="graph7" src="https://github.com/user-attachments/assets/7c608dcb-f18e-493b-8cab-c47c0368590e" />
 
 # Alert System
 When abnormal machine conditions are detected:
@@ -70,3 +90,11 @@ When abnormal machine conditions are detected:
 - SMS alerts are sent using Twilio
 - Email notifications are triggered automatically
 - Maintenance recommendations are provided
+
+## Email alerts 
+<img width="1648" height="786" alt="emailalerts" src="https://github.com/user-attachments/assets/c18c92f8-7ac0-4a65-88d2-28deb4608502" />
+
+## SMS alerts
+<img width="720" height="1600" alt="sms_alerts" src="https://github.com/user-attachments/assets/e69c0e45-b1b0-4e3e-bb80-e28d8437cb6d" />
+
+
