@@ -255,13 +255,13 @@ def predict_machine_status(reading):
         solutions.append("   → Plan tool replacement soon")
 
     if not causes:
-        print("   All parameters within safe limits!")
+        print(" All parameters within safe limits! ")
     else:
-        print("   Possible Causes:")
+        print(" Possible Causes: ")
         for c in causes:
             print(c)
             print()
-            print("   Recommended Solutions:")
+            print(" Recommended Solutions: ")
         for s in solutions:
               print(s)
 
@@ -282,11 +282,11 @@ plot_configs = [
      'xl': 'Air Temp (K)',  'yl': 'Tool Wear (min)'},
 ]
 
-cmap_bg   = ListedColormap(['#A8DFCA', '#F5D78E', '#F5A8A8'])
+cmap_bg = ListedColormap(['#A8DFCA', '#F5D78E', '#F5A8A8'])
 label_map = {'fault': 0, 'normal': 1, 'warning': 2}
 
 for cfg in plot_configs:
-    ax     = cfg['ax']
+    ax = cfg['ax']
     f1_idx = FEATURES.index(cfg['f1'])
     f2_idx = FEATURES.index(cfg['f2'])
     X_2d   = X[:, [f1_idx, f2_idx]]
@@ -403,8 +403,8 @@ probs        = model.predict_proba(x_sc)[0]
 confidence   = round(float(max(probs)) * 100, 1)
 alert_flag   = {'normal': 0, 'warning': 1, 'fault': 2}[prediction]
 
-API_KEY    = "UYYWK3DCZ080ILG8"
-CHANNEL_ID = "3307443"
+API_KEY    = "Enter your API_KEY"
+CHANNEL_ID = "Your Channel_ID"
 print("=" * 60)
 print("  ThingSpeak Cloud Payload")
 print("  (This is what ESP32 sends over WiFi)")
@@ -465,7 +465,7 @@ test_readings = [
     {'air_temp':308,'process_temp':317,'rpm':950, 'torque':78,'tool_wear':240},
 ]
 
-API_KEY = "UYYWK3DCZ080ILG8"
+API_KEY = "Enter your API_KEY"
 
 for i, reading in enumerate(test_readings):
     # Alert flag decide karo
@@ -477,7 +477,7 @@ for i, reading in enumerate(test_readings):
         alert = 0
 
     url = (f"https://api.thingspeak.com/update"
-           f"?api_key={"UYYWK3DCZ080ILG8"}"
+           f"?api_key={"Enter your API_KEY"}"
            f"&field1={reading['air_temp']}"
            f"&field2={reading['process_temp']}"
            f"&field3={reading['rpm']}"
@@ -503,8 +503,8 @@ client = Client(account_sid, auth_token)
 def send_sms(message):
     client.messages.create(
         body=message,
-        from_='+12605298698',
-        to='+919954957194'
+        from_='Your TWILIO Phone number',
+        to='Your Phone number to whom the sms alert should go'
     )
 
 x = [[
@@ -556,9 +556,9 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
 # ─── CONFIG ───────────────────────────────
-SENDER_EMAIL    = "poorvarao361@gmail.com"      # your Gmail
-SENDER_PASSWORD = "qqoo dbom vmbj lmyy"    # Gmail App Password
-RECEIVER_EMAIL  = "raopoorva6@gmail.com"  # who gets the alert
+SENDER_EMAIL    = "Your email address"      # your Gmail
+SENDER_PASSWORD = "Your gmail app password"    # Gmail App Password
+RECEIVER_EMAIL  = "Email address of the receiver who will get the email alerts"  # who gets the alert
 MACHINE_ID      = "MCH-01"
 # ──────────────────────────────────────────
 
