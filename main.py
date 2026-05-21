@@ -424,7 +424,7 @@ import urllib.request
 
 # Send data to ThingSpeak
 url = (f"https://api.thingspeak.com/update"
-       f"?api_key=UYYWK3DCZ080ILG8"
+       f"?api_key=Enter your API_KEY"
        f"&field1={NEW_READING['air_temp']}"
        f"&field2={NEW_READING['process_temp']}"
        f"&field3={NEW_READING['rpm']}"
