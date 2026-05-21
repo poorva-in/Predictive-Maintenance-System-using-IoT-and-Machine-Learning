@@ -117,10 +117,66 @@ When abnormal machine conditions are detected:
 - Email notifications are triggered automatically
 - Maintenance recommendations are provided
 
-## Email alerts 
-<img width="1648" height="786" alt="emailalerts" src="https://github.com/user-attachments/assets/c18c92f8-7ac0-4a65-88d2-28deb4608502" />
+# Twilio SMS Alert Configuration
+The system uses the Twilio API to send real-time SMS alerts whenever abnormal machine conditions are detected.
+
+# Steps to Configure Twilio
+1. Create an account on Twilio.
+2. Verify your mobile number.
+3. Obtain:
+   - Account SID
+   - Auth Token
+   - Twilio Phone Number
+4. Install the Twilio library in Python.
+
+- bash
+pip install twilio
+
+# Twilio Phone Number Generation 
+The Twilio phone number used in the project was generated through the Twilio cloud platform after creating a Twilio account.
+
+# Steps Followed
+
+1. Created an account on Twilio.
+2. Verified the personal mobile number.
+3. Accessed the Twilio Console Dashboard.
+4. Navigated to:
+   - Phone Numbers → Manage → Buy a Number (You dont need to buy a number)
+5. Generated a Twilio phone number for SMS services.
+6. Used the generated number in the Python code for sending alert messages.
+
+Example:
+
+- python
+from_ = "YOUR_TWILIO_PHONE_NUMBER"
+to = "YOUR_PHONE_NUMBER"
 
 ## SMS alerts
 <img width="720" height="1600" alt="sms_alerts" src="https://github.com/user-attachments/assets/e69c0e45-b1b0-4e3e-bb80-e28d8437cb6d" />
 
+# Email Alert Configuration
+
+The system uses Gmail SMTP services to send automated email alerts whenever abnormal machine conditions are detected.
+
+# Steps to Configure Email Alerts
+
+1. Created a Gmail account for sending alerts.
+2. Enabled 2-Step Verification in the Google account settings.
+3. Generated a Gmail App Password by navigating to:
+   - Google Account → Security → App Passwords
+4. Selected:
+   - App Type → Mail
+   - Device → Custom Device
+5. Generated a 16-character App Password.
+6. Used the generated App Password and email address in the Python code.
+
+Example:
+
+- python
+SENDER_EMAIL = "Your email"
+SENDER_PASSWORD = "Your gmail app password"
+RECEIVER_EMAIL = "Enter receiver email"
+
+## Email alerts 
+<img width="1648" height="786" alt="emailalerts" src="https://github.com/user-attachments/assets/c18c92f8-7ac0-4a65-88d2-28deb4608502" />
 
