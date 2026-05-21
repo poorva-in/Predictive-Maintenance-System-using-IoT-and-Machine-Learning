@@ -75,7 +75,33 @@ The project simulates ESP32-based sensor communication using Python.
 ## ESP 32 Simulation
 <img width="2084" height="1769" alt="esp32_simulation (1)" src="https://github.com/user-attachments/assets/93b2fe90-5e9e-4991-b033-fa6079996316" />
 
-## Things Speak graphs
+# ThingSpeak setup
+To enable cloud monitoring, a ThingSpeak channel was created.
+# Steps to Get API Key and Channel ID
+1. Create an account on ThingSpeak.
+2. Create a new channel.
+3. Add required fields such as:
+   - Air Temperature
+   - Process Temperature
+   - RPM
+   - Torque
+   - Tool Wear
+   - Alert Flag
+4. Open the channel settings.
+5. Copy:
+   - Write API Key
+   - Channel ID
+These credentials are then used in the Python code for sending real-time sensor data to the ThingSpeak cloud platform.
+
+
+Example:
+
+- python
+API_KEY = "YOUR_THINGSPEAK_API_KEY"
+CHANNEL_ID = "YOUR_CHANNEL_ID"
+
+
+## ThingSpeak graphs
 <img width="544" height="295" alt="graph1" src="https://github.com/user-attachments/assets/3a984d9a-9245-49c4-9151-1c987f23cad7" />
 <img width="551" height="281" alt="graph2" src="https://github.com/user-attachments/assets/af633b70-92f7-43c5-85ff-74012d6c8efa" />
 <img width="528" height="305" alt="graph3" src="https://github.com/user-attachments/assets/1ae85d60-842a-41af-8c21-0e19ac369b2f" />
