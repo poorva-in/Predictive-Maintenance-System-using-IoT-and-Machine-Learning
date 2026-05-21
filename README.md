@@ -63,6 +63,7 @@ https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classific
 # IoT Integration
 The system sends real-time machine data to the ThingSpeak cloud platform for monitoring and visualization.
 The project simulates ESP32-based sensor communication using Python.
+
 ## Data Exploration
 <img width="2233" height="1328" alt="data_exploration (2)" src="https://github.com/user-attachments/assets/00ee9e12-488a-4278-89bf-2a39638430ba" />
 
@@ -77,6 +78,7 @@ The project simulates ESP32-based sensor communication using Python.
 
 # ThingSpeak setup
 To enable cloud monitoring, a ThingSpeak channel was created.
+
 # Steps to Get API Key and Channel ID
 1. Create an account on ThingSpeak.
 2. Create a new channel.
@@ -97,8 +99,9 @@ These credentials are then used in the Python code for sending real-time sensor 
 Example:
 
 - python
-API_KEY = "YOUR_THINGSPEAK_API_KEY"
-CHANNEL_ID = "YOUR_CHANNEL_ID"
+
+   API_KEY = "Your ThingSpeak Api_Key"
+   CHANNEL_ID = "Your Channel_ID"
 
 
 ## ThingSpeak graphs
@@ -130,7 +133,8 @@ The system uses the Twilio API to send real-time SMS alerts whenever abnormal ma
 4. Install the Twilio library in Python.
 
 - bash
-pip install twilio
+
+   pip install twilio
 
 # Twilio Phone Number Generation 
 The Twilio phone number used in the project was generated through the Twilio cloud platform after creating a Twilio account.
@@ -148,8 +152,9 @@ The Twilio phone number used in the project was generated through the Twilio clo
 Example:
 
 - python
-from_ = "YOUR_TWILIO_PHONE_NUMBER"
-to = "YOUR_PHONE_NUMBER"
+
+   from_ = "Your Twilio Phone Number"
+   to = "Your Phone Number"
 
 ## SMS alerts
 <img width="720" height="1600" alt="sms_alerts" src="https://github.com/user-attachments/assets/e69c0e45-b1b0-4e3e-bb80-e28d8437cb6d" />
@@ -173,9 +178,10 @@ The system uses Gmail SMTP services to send automated email alerts whenever abno
 Example:
 
 - python
-SENDER_EMAIL = "Your email"
-SENDER_PASSWORD = "Your gmail app password"
-RECEIVER_EMAIL = "Enter receiver email"
+
+   SENDER_EMAIL = "Your email"
+   SENDER_PASSWORD = "Your gmail app password"
+   RECEIVER_EMAIL = "Enter receiver email"
 
 ## Email alerts 
 <img width="1648" height="786" alt="emailalerts" src="https://github.com/user-attachments/assets/c18c92f8-7ac0-4a65-88d2-28deb4608502" />
